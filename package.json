@@ -18,7 +18,9 @@
   "scripts": {
     "watch": "rm -rf ./dist/fonts ./dist/icons ./dist/img && gulp && gulp watch",
     "build": "rm -rf ./dist/fonts ./dist/icons ./dist/img && gulp",
-    "prod": "rm -rf ./dist/fonts ./dist/icons ./dist/img && gulp && gulp prod"
+    "prod": "rm -rf ./dist/fonts ./dist/icons ./dist/img && gulp && gulp prod",
+    "b-build": "rm -rf ./dist/fonts ./dist/icons ./dist/img && brunch build",
+    "b-build-p": "brunch build --production"
   },
   "main": "dist/styleguide.html",
   "style": "dist/css/main.css",
@@ -33,6 +35,10 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^7.2.4",
+    "brunch": "^2.10.12",
+    "csscomb-brunch": "^1.7.0",
+    "csswring": "^6.0.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-changed": "^3.1.0",
@@ -44,7 +50,11 @@
     "gulp-stylelint": "^5.0.0",
     "gulp-uglify": "^3.0.0",
     "gulp-useref": "^3.1.2",
-    "run-sequence": "^2.1.0",
+    "imagemin-brunch": "^1.1.0",
+    "imagemin-svgo": "^6.0.0",
+    "postcss-brunch": "^2.1.0",
+    "run-sequence": "^2.2.0",
+    "sass-brunch": "^2.10.4",
     "stylelint-config-sass-guidelines": "^3.1.0"
   }
 }
